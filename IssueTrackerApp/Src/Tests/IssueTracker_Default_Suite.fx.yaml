@@ -1,0 +1,93 @@
+"'4e2a3da5-a43b-4364-a0e3-fea657f770dc' As TestSuite":
+    Description: =""
+    DisplayName: ="IssueTracker_Default_Suite"
+
+    "'0d14d012-5ba9-4e70-aa7a-14737356b042' As TestCase":
+        Description: =""
+        DisplayName: ="Case_AddRecord"
+
+        Step1 As TestStep:
+            Description: ="Select 'IconNewItem1'"
+            Screen: =BrowseScreen1
+            Value: =Select(IconNewItem1)
+
+        Step2 As TestStep:
+            Description: ="Set 'DataCardValue9'.Text to ""test"""
+            Screen: =EditScreen1
+            Value: =SetProperty(DataCardValue9.Text, "test")
+
+        Step3 As TestStep:
+            Description: ="Set 'DataCardValue10'.Text to ""test studio"""
+            Screen: =EditScreen1
+            Value: =SetProperty(DataCardValue10.Text, "test studio")
+
+        Step4 As TestStep:
+            Description: |-
+                ="Set 'DataCardValue11'.SelectedItems to Table({'@odata.type':""#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"",'Id':2,'Value':""Normal""})"
+            Screen: =EditScreen1
+            Value: |-
+                =SetProperty(DataCardValue11.SelectedItems, Table({'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:2,Value:"Normal"}))
+
+        Step5 As TestStep:
+            Description: ="Select 'DataCardValue11'"
+            Screen: =EditScreen1
+            Value: =Select(DataCardValue11)
+
+        Step6 As TestStep:
+            Description: |-
+                ="Set 'DataCardValue12'.SelectedItems to Table({'@odata.type':""#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference"",'Id':3,'Value':""Duplicate""})"
+            Screen: =EditScreen1
+            Value: |-
+                =SetProperty(DataCardValue12.SelectedItems, Table({'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:3,Value:"Duplicate"}))
+
+        Step7 As TestStep:
+            Description: ="Select 'DataCardValue12'"
+            Screen: =EditScreen1
+            Value: =Select(DataCardValue12)
+
+        Step8 As TestStep:
+            Description: |-
+                ="Set 'DataCardValue13'.SelectedItems to Table({'@odata.type':""#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser"",'Claims':""i:0#.f|membership|danishdetho@bazzinga2019.onmicrosoft.com"",'Department':"""",'DisplayName':""Danish Ali"",'Email':""danishdetho@bazzinga2019.onmicrosoft.com"",'JobTitle':"""",'Picture':""https://bazzinga2019.sharepoint.com/sites/axioworks/_layouts/15/UserPhoto.aspx?Size=L&AccountName=danishdetho@bazzinga2019.onmicrosoft.com""})"
+            Screen: =EditScreen1
+            Value: |-
+                =SetProperty(DataCardValue13.SelectedItems, Table({'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",Claims:"i:0#.f|membership|danishdetho@bazzinga2019.onmicrosoft.com",Department:"",DisplayName:"Danish Ali",Email:"danishdetho@bazzinga2019.onmicrosoft.com",JobTitle:"",Picture:"https://bazzinga2019.sharepoint.com/sites/axioworks/_layouts/15/UserPhoto.aspx?Size=L&AccountName=danishdetho@bazzinga2019.onmicrosoft.com"}))
+
+        Step9 As TestStep:
+            Description: ="Select 'DataCardValue13'"
+            Screen: =EditScreen1
+            Value: =Select(DataCardValue13)
+
+        Step10 As TestStep:
+            Description: ="Set 'DataCardValue14'.SelectedDate to Date(2021,10,1)"
+            Screen: =EditScreen1
+            Value: =SetProperty(DataCardValue14.SelectedDate, Date(2021,10,1))
+
+        Step11 As TestStep:
+            Description: ="Select 'DataCardValue14'"
+            Screen: =EditScreen1
+            Value: =Select(DataCardValue14)
+
+        Step12 As TestStep:
+            Description: ="Select 'IconAccept1'"
+            Screen: =EditScreen1
+            Value: =Select(IconAccept1)
+
+        Step13 As TestStep:
+            Description: ="Assert"
+            Screen: =BrowseScreen1
+            Value: =Assert(DataCardValue14.SelectedDate < Today(),"Valid Recorded Date")
+
+    "'51df980a-b342-457d-bbf5-13af1df55156' As TestCase":
+        Description: =""
+        DisplayName: ="Case_RecordDetails"
+
+        Step1 As TestStep:
+            Description: ="Select 'NextArrow1' in row 2 in 'BrowseGallery1'"
+            Screen: =BrowseScreen1
+            Value: =Select(BrowseGallery1, 2, NextArrow1)
+
+        Step2 As TestStep:
+            Description: ="Select 'IconBackarrow1'"
+            Screen: =DetailScreen1
+            Value: =Select(IconBackarrow1)
+
