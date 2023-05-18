@@ -1,7 +1,7 @@
 "BrowseScreen1 As screen.'phoneBrowseLayout_ver3.0'":
 
     RectQuickActionBar1 As rectangle:
-        Fill: =RGBA(118, 0, 0, 1)
+        Fill: =RGBA(127, 178, 57, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
