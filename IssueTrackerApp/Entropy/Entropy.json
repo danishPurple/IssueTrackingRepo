@@ -9,6 +9,7 @@
     "Assigned to_DataCard1": 27,
     "Assigned to_DataCard2": 83,
     "Body1": 55,
+    "Body1_1": 96,
     "BrowseGallery1": 50,
     "BrowseScreen1": 41,
     "DataCardKey1": 12,
@@ -101,10 +102,10 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/18/2023 02:01:39",
+  "HeaderLastSavedDateTimeUTC": "05/18/2023 02:04:39",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "79cdf013-0c66-4916-bc5e-30a1c5e1de23": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/e7d176765e8c420395d25e9b897c614d\""
+    "79cdf013-0c66-4916-bc5e-30a1c5e1de23": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/shared-sharepointonl-49b0fcb7-97e9-4cb1-baa7-0315bad07993\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -140,6 +141,7 @@
     "Assigned to_DataCard1": {},
     "Assigned to_DataCard2": {},
     "Body1": {},
+    "Body1_1": {},
     "BrowseGallery1": {},
     "BrowseScreen1": {},
     "DataCardKey1": {},
@@ -239,6 +241,7 @@
     "Assigned to_DataCard1": 37,
     "Assigned to_DataCard2": 76,
     "Body1": 13,
+    "Body1_1": 13,
     "BrowseGallery1": 8,
     "BrowseScreen1": 0,
     "DataCardKey1": 22,
@@ -332,7 +335,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.0947578,
+    "AnalysisLoadTime": 1.1539597,
     "ControlCount": {
       "combobox": 6,
       "datepicker": 1,
@@ -342,7 +345,7 @@
       "galleryTemplate": 1,
       "htmlViewer": 1,
       "icon": 10,
-      "label": 42,
+      "label": 43,
       "rectangle": 5,
       "screen": 3,
       "TestCase": 2,
@@ -350,7 +353,7 @@
       "text": 3,
       "typedDataCard": 14
     },
-    "DeserializationLoadTime": 2.0324072
+    "DeserializationLoadTime": 2.5712945
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
